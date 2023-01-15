@@ -13,7 +13,7 @@ class TestEntryService:
             "length_a": 54.981,
             "length_b": 33.389,
             "length_c": 61.921,
-            "zpdb": 2
+            "zpdb": 2,
         }
         assert data["cell"] == cell_data
 

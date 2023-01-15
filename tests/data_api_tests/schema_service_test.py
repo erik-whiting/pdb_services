@@ -20,12 +20,18 @@ class TestSchemaServices:
     def test_chemical_component_schema_service(self):
         service = schema_service.ChemicalComponentService()
         data = service.search()
-        assert data["title"] == "schema: bird_chem_comp_core collection: bird_chem_comp_core version: 7.1.2"
+        assert (
+            data["title"]
+            == "schema: bird_chem_comp_core collection: bird_chem_comp_core version: 7.1.2"
+        )
 
     def test_drugbank_schema_service(self):
         service = schema_service.DrugBankSchemaService()
         data = service.search()
-        assert data["title"] == "schema: drugbank_core collection: drugbank_core version: 1.3.1"
+        assert (
+            data["title"]
+            == "schema: drugbank_core collection: drugbank_core version: 1.3.1"
+        )
 
     def test_entry_schema_service(self):
         service = schema_service.EntrySchemaService()

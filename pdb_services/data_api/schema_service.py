@@ -4,6 +4,7 @@ import requests
 # These endpoints are slightly different than
 # the others, so we aren't importing `ServiceModel`
 
+
 class SchemaServices:
     pdb_base_url = "https://data.rcsb.org/rest/v1/schema"
 

@@ -30,6 +30,7 @@ class MultipleIDsServices(HoldingsServices):
         self.url_request_string = f"{self.base_url}/entry_ids"
         return self._make_api_request()
 
+
 class CurrentEntriesService(MultipleIDsServices):
     def __init__(self):
         super().__init__("current")
